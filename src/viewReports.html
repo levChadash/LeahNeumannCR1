@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>view reports</title>
+        <h1>Epidemology Report</h1>
+        <template id="temp-item">
+         <ul class="report-item">
+             <li class="reportsList">
+             </li>
+         </ul>
+        </template>
+    
+    </head>
+    <body onload="load()">
+        <input type="text" id="citySearch" placeholder="City" >
+        <div id='listDiv'>
+            <ul id="reportsListUl">
+
+            </ul>
+        </div>
+        <button onclick="document.location.href='reports.html'">Add A Report</button>
+
+        <script type="text/javascript" src="scripts/viewReorts.js"></script>
+    </body>
+</html>

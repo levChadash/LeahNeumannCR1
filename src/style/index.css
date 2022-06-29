@@ -1,0 +1,8 @@
+body {
+    background-image: url("../images/covid.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainButton{
+    padding: 50px 32px;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style/reports.css">
+
+    <title>Reports</title>
+    <h1>Report Your Path</h1>
+
+    <template id="temp-row">
+        <tr class="item-row">
+            <td class="startDateColumn" id="startDateColumn">
+                <div class="startDate" id="startDate"></div>
+            </td>
+            <td class="endDateColumn" id="endDateColumn">
+                <div class="endDate" id="endDate"></div>
+            </td>
+            <td class="cityColumn" id="cityColumn">
+                <div class="city" id="city"></div>
+            </td>
+            <td class="locationColumn" id="locationColumn">
+                <div class="location" id="location"></div>
+            </td>
+            <td class="delete">
+                <div><a href="#" title="delete" class="Hide DeleteButton showText" id="deleteReport">delete report</a></div>
+            </td>
+        </tr>
+    </template>
+</head>
+
+<body onload="load()">
+    <input type="text" id="idInput" placeholder="Patient Id"  >
+    <div class="reportsDiv" id="reportsDiv" hidden="true">
+        <table id="reportsTable" class="reportsTable">
+            <thead>
+                <tr>
+                    <th >Start Date</th>
+                    <th >End Date</th>
+                    <th>City</th>
+                    <th >Location</th>
+                </tr>
+            </thead>
+            <tbody id="reports">
+
+            </tbody>
+            <tr>
+                <td><input id="startDateInput" type="datetime-local" required></td>
+                <td><input id="endDateInput" type="datetime-local"></td>
+                <td><input  id="cityInput" type="text"></td>
+                <td><input id="locationInput" type="text"></td>
+                <td><button id="addButton">Add</button></td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="document.location.href='viewReports.html'">View Reports</button>
+
+    <script type="text/javascript" src="scripts/reports.js"></script>
+</body>
+
+</html>
